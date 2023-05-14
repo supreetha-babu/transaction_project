@@ -231,7 +231,7 @@ string querry = "insert into AttendanceUser(u_name,u_date,u_time)values((select 
 SqlCommand cmd = new SqlCommand(querry, con); con.Open();
 int aa = cmd.ExecuteNonQuery(); if (aa != 0)
 {
-MessageBox.Show("Attendance Marked");
+MessageBox.Show("Face matched successfully");
 
 
 }
@@ -241,5 +241,6 @@ MessageBox.Show("Error");
 }
 con.Close();
 }
-
+}
+}
 }
